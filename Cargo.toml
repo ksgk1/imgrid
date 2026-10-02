@@ -1,0 +1,24 @@
+[package]
+authors = ["ksgk1"]
+name = "imgrid"
+version = "0.1.0"
+edition = "2024"
+
+[[bin]]
+    name = "imgrid"
+
+[dependencies]
+image = { version = "0.25.10", default-features = false, features = ["jpeg", "png", "rayon", "webp"] }
+rayon = { version = "1.12.0" }
+
+[lints.clippy]
+    complexity  = { level = "deny", priority = -1 }
+    correctness = { level = "deny", priority = -1 }
+    nursery     = { level = "deny", priority = -1 }
+    pedantic    = { level = "deny", priority = -1 }
+    perf        = { level = "deny", priority = -1 }
+    style       = { level = "deny", priority = -1 }
+    suspicious  = { level = "deny", priority = -1 }
+    cast_possible_truncation = "allow"
+    cast_sign_loss = "allow"
+    cast_precision_loss = "allow"

@@ -1,0 +1,9 @@
+/target
+*.png
+*.jpeg
+*.jpg
+*.webp
+.*.lst
+test.sh
+Dockerfile
+.dockerignore
