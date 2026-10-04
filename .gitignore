@@ -3,7 +3,8 @@
 *.jpeg
 *.jpg
 *.webp
+*.bmp
 .*.lst
-test.sh
+*.sh
 Dockerfile
 .dockerignore
